@@ -74,3 +74,15 @@
     return all combinations.
 
 */
+
+
+    TC: M^N -> M is the letters of 7 and 9. because 7 and 9 has maximum letters 4. rest of all has 3. N is the length of input digits. 
+                so either 3^N or 4^N.
+                
+    SC: O(N) -> 
+        Recursion stack:
+        At most n recursive calls deep → O(n)
+        StringBuilder (temporary):
+        Uses up to n characters → O(n)
+        Result list:
+        Stores 3ⁿ strings, each of length n → O(n × 3ⁿ)
