@@ -33,11 +33,13 @@ class Solution {
             return;
         }
 
-        String inputDigit = phoneMap.get(digits.charAt(index)); 
+        String inputDigit = phoneMap.get(digits.charAt(index)); // 2-> "a b c"
+                                                                //      ^
 
-        for(int i=0; i<inputDigit.length(); i++){
+        for(int i=0; i<inputDigit.length(); i++){ // a
         
-        sb.append(inputDigit.charAt(i)); 
+        //add "a" to sb(cur_string)
+        sb.append(inputDigit.charAt(i)); // sb = "a"
 
         back_t(index+1, sb, result, digits, phoneMap);
 
